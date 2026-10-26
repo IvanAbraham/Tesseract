@@ -13,10 +13,58 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de origen\engine">
+      <UniqueIdentifier>{34b1b2b3-3899-45b3-86ab-766150744959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\entities">
+      <UniqueIdentifier>{4da26d5c-112b-4417-b88e-a7da7a48b556}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\scenes">
+      <UniqueIdentifier>{9b08d3e0-772c-424c-8dc9-35c281d0cf25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\engine">
+      <UniqueIdentifier>{e1c7d404-3861-4f6a-ba5e-3bf507e97384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\entities">
+      <UniqueIdentifier>{9ae478af-1f3b-44d3-97db-315bdd303cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\scenes">
+      <UniqueIdentifier>{5f535111-b302-4420-a6fe-1a6b420e4589}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\game.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\scenes\gameplay.cpp">
+      <Filter>Archivos de origen\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\ship.cpp">
+      <Filter>Archivos de origen\entities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\physics.cpp">
+      <Filter>Archivos de origen\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entities\obstacle.cpp">
+      <Filter>Archivos de origen\entities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\game.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\gameplay.h">
+      <Filter>Archivos de encabezado\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\ship.h">
+      <Filter>Archivos de encabezado\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\physics.h">
+      <Filter>Archivos de encabezado\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\obstacle.h">
+      <Filter>Archivos de encabezado\entities</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

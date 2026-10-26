@@ -19,7 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\engine\physics.cpp" />
+    <ClCompile Include="src\entities\obstacle.cpp" />
+    <ClCompile Include="src\entities\ship.cpp" />
+    <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\scenes\gameplay.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\engine\physics.h" />
+    <ClInclude Include="src\entities\obstacle.h" />
+    <ClInclude Include="src\entities\ship.h" />
+    <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\scenes\gameplay.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

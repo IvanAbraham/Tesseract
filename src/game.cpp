@@ -2,44 +2,54 @@
 
 namespace tesseract
 {
-	static void Init();
-	static void Update();
-	static void Draw();
-	static void Close();
+	static const char* verText = "v0.1";
+	static const int fontSize = 20;
+	static const int padding = 10;
+
+	static void InitGame();
+	static void UpdateGame();
+	static void DrawGame();
 
 	void Run()
-	{
-		bool run;
+	{		
+		InitGame();
 
-		run = true;
-		
-		Init();
-
-		while (run)
+		while (!WindowShouldClose())
 		{
-			Update();
+			UpdateGame();
+
+			DrawGame();
 		}
 
-		Close();
+		CloseWindow();
 	}
 
-	static void Init()
+	void InitGame()
 	{
+		static Vector2 screenSize = { 1280, 720 };
+		InitWindow(static_cast<int>(screenSize.x), static_cast<int>(screenSize.y), "TESSERACT");
+		SetTargetFPS(60);
 
+		scene::InitGameplay();
 	}
 
-	static void Update()
+	void UpdateGame()
 	{
-		Draw();
+		scene::UpdateGameplay();
 	}
 
-	static void Close()
+	void DrawGame()
 	{
+		BeginDrawing();
+		
+		int verWidth = MeasureText(verText, fontSize);
 
-	}
+		ClearBackground(WHITE);
+		
+		scene::DrawGameplay();
 
-	static void Draw()
-	{
+		DrawText(verText, GetScreenWidth() - verWidth - padding, padding, fontSize, RED);
 
+		EndDrawing();
 	}
 }

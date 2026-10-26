@@ -2,10 +2,10 @@
 
 namespace entity
 {
-	void InitShip(Vector2 screenSize, Ship& Player)
+	void InitShip(Ship& Player)
 	{
-		Player.size = { (screenSize.x / 10.0f), (screenSize.y / 15.0f) };
-		Player.pos = { (Player.size.x + 30.0f), (screenSize.y / 2.0f) };
+		Player.size = { (GetScreenWidth() / 10.0f), (GetScreenHeight() / 15.0f) };
+		Player.pos = { (Player.size.x + 30.0f), (GetScreenHeight() / 2.0f) };
 		Player.gravity = 5.0f;
 	}
 

@@ -10,7 +10,7 @@ namespace entity
 		float gravity;
 	};
 
-	void InitShip(Vector2 screenSize, Ship& Player);
+	void InitShip(Ship& Player);
 	void UpdateShip(Ship& Player);
 	void DrawShip(Ship& Player);
 }

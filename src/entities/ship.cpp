@@ -1,6 +1,6 @@
 #include "ship.h"
 
-namespace entity
+namespace tesseract::entity
 {
 	void InitShip(Ship& Player)
 	{

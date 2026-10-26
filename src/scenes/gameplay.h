@@ -2,7 +2,7 @@
 #include "../entities/ship.h"
 #include "../entities/obstacle.h"
 
-namespace scene
+namespace tesseract::scene
 {
 	void InitGameplay();
 	void UpdateGameplay();

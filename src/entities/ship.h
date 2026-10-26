@@ -1,7 +1,7 @@
 #pragma once
 #include "../engine/physics.h"
 
-namespace entity
+namespace tesseract::entity
 {
 	struct Ship
 	{

@@ -1,8 +1,8 @@
 #include "gameplay.h"
 
-namespace scene
+namespace tesseract::scene
 {
-	entity::Ship P1;
+	static entity::Ship P1;
 
 	void InitGameplay()
 	{

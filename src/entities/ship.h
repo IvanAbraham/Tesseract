@@ -7,7 +7,7 @@ namespace entity
 	{
 		Vector2 size;
 		Vector2 pos;
-		float gravity;
+		float speed;
 	};
 
 	void InitShip(Ship& Player);

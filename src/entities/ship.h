@@ -1,5 +1,5 @@
 #pragma once
-#include "../engine/physics.h"
+#include <raylib.h>
 
 namespace tesseract::entity
 {

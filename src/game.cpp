@@ -1,4 +1,6 @@
 #include "game.h"
+#include <raylib.h>
+#include "scenes/gameplay.h"
 
 namespace tesseract
 {

@@ -10,11 +10,7 @@ namespace tesseract::scenes
 	static bool isGameOver;
 
 	static const int fontSize = 30;
-	const char* loseMessage = "GAME OVER - Press enter to retry.";
-	int gameOverLength = MeasureText(loseMessage, fontSize);
-	int x = (GetScreenWidth() - gameOverLength) / 2;
-	int y = (GetScreenHeight() - fontSize) / 2;
-
+	static const char* loseMessage = "GAME OVER - Press enter to retry.";
 
 	void InitGameplay()
 	{
@@ -50,6 +46,10 @@ namespace tesseract::scenes
 
 		if (isGameOver)
 		{
+			static int gameOverLength = MeasureText(loseMessage, fontSize);
+			static int x = (GetScreenWidth() - gameOverLength) / 2;
+			static int y = (GetScreenHeight() - fontSize) / 2;
+
 			DrawText(loseMessage, x, y, fontSize, RED);
 		}
 	}

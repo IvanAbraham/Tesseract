@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Tesseract.vcxproj" />
+  <Project Path="Tesseract.vcxproj" Id="ab2c10ec-f264-401d-8c62-d606c4abf852" />
 </Solution>

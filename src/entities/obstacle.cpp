@@ -1,6 +1,6 @@
 #include "obstacle.h"
 
-namespace tesseract::entity
+namespace tesseract::entities
 {
 	static const float ObstWidthRatio = 16.0f;    
 	static const float ObstHeightRatio = 2.0f;    

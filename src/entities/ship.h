@@ -1,7 +1,7 @@
 #pragma once
 #include <raylib.h>
 
-namespace tesseract::entity
+namespace tesseract::entities
 {
 	struct Ship
 	{

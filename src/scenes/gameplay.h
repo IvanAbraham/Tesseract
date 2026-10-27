@@ -1,6 +1,6 @@
 #pragma once
 
-namespace tesseract::scene
+namespace tesseract::scenes
 {
 	void InitGameplay();
 	void UpdateGameplay();

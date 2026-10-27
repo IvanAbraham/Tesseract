@@ -3,10 +3,10 @@
 #include "entities/obstacle.h"
 #include "engine/physics.h"
 
-namespace tesseract::scene
+namespace tesseract::scenes
 {
-	static entity::Ship P1;
-	static entity::Obstacle Obs;
+	static entities::Ship P1;
+	static entities::Obstacle Obs;
 	static bool isGameOver;
 
 	static const int fontSize = 30;
@@ -20,16 +20,16 @@ namespace tesseract::scene
 	{
 		isGameOver = false;
 
-		entity::InitShip(P1);
-		entity::InitObstacle(Obs);
+		entities::InitShip(P1);
+		entities::InitObstacle(Obs);
 	}
 
 	void UpdateGameplay()
 	{
 		if (!isGameOver)
 		{
-			entity::UpdateShip(P1);
-			entity::UpdateObstacle(Obs);
+			entities::UpdateShip(P1);
+			entities::UpdateObstacle(Obs);
 
 			if (engine::CollisionRecRec(P1.pos, P1.size, Obs.pos, Obs.size))
 			{
@@ -45,8 +45,8 @@ namespace tesseract::scene
 
 	void DrawGameplay()
 	{
-		entity::DrawShip(P1);
-		entity::DrawObstacle(Obs);
+		entities::DrawShip(P1);
+		entities::DrawObstacle(Obs);
 
 		if (isGameOver)
 		{

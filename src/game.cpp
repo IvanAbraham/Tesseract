@@ -32,23 +32,23 @@ namespace tesseract
 		InitWindow(static_cast<int>(screenSize.x), static_cast<int>(screenSize.y), "TESSERACT");
 		SetTargetFPS(60);
 
-		scene::InitGameplay();
+		scenes::InitGameplay();
 	}
 
 	void UpdateGame()
 	{
-		scene::UpdateGameplay();
+		scenes::UpdateGameplay();
 	}
 
 	void DrawGame()
 	{
 		BeginDrawing();
 		
-		int verWidth = MeasureText(verText, fontSize);
-
 		ClearBackground(WHITE);
 		
-		scene::DrawGameplay();
+		scenes::DrawGameplay();
+
+		static const int verWidth = MeasureText(verText, fontSize);
 
 		DrawText(verText, GetScreenWidth() - verWidth - padding, padding, fontSize, RED);
 

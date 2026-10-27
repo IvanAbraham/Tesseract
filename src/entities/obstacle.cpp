@@ -10,9 +10,9 @@ namespace tesseract::entity
 
 	void InitObstacle(Obstacle& obstacle)
 	{
-		obstacle.pos = {0, 0};
 		obstacle.size = { static_cast<float>(GetScreenWidth()) / ObstWidthRatio, static_cast<float>(GetScreenHeight()) / ObstHeightRatio };
 		obstacle.speed = ObstSpeed;
+		ResetPos(obstacle);
 	}
 	
 	void UpdateObstacle(Obstacle& obstacle)

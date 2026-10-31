@@ -7,7 +7,9 @@ namespace tesseract::entities
 	{
 		Vector2 size;
 		Vector2 pos;
-		float speed;
+		float velocity;
+		float gravity;
+		float jumpPower;
 	};
 
 	void InitShip(Ship& Player);

@@ -1,4 +1,5 @@
 #include "ship.h"
+#include "engine/physics.h"
 
 namespace tesseract::entities
 {
@@ -17,13 +18,19 @@ namespace tesseract::entities
 	void UpdateShip(Ship& Player)
 	{
 		Player.velocity += Player.gravity * GetFrameTime();
-		
+
 		if (IsKeyPressed(KEY_SPACE))
 		{
 			Player.velocity = -Player.jumpPower;
 		}
 
 		Player.pos.y += Player.velocity * GetFrameTime();
+
+		if (engine::TopScreenRecCol(Player.pos))
+		{
+			Player.pos.y = 0.0f;
+			Player.velocity = 0.0f;
+		}
 	}
 
 	void DrawShip(Ship& Player)

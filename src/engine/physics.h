@@ -9,5 +9,11 @@ namespace tesseract::engine
 
 	bool CollisionCircleCircle(Vector2 pos1, float radius1, Vector2 pos2, float radius2);
 
-	bool InScreenCheck(Vector2 position, float radius, Vector2 screenSize);
+	bool TopScreenRecCol(Vector2 position);
+
+	bool BottomScreenRecCol(Vector2 position, float screenHeight);
+
+	bool RightScreenRecCol(Vector2 position, float screenWidth);
+
+	bool LeftScreenRecCol(Vector2 position, Vector2 size);
 }

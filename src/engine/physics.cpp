@@ -31,9 +31,23 @@ namespace tesseract::engine
 
     }
 
-    bool InScreenCheck(Vector2 position, float radius, Vector2 screenSize)
+    bool TopScreenRecCol(Vector2 position)
     {
-        return (position.x - radius < 0 || position.x + radius > screenSize.x ||
-            position.y - radius < 0 || position.y + radius > screenSize.y);
+        return (position.y < 0);
+    }
+
+    bool BottomScreenRecCol(Vector2 position, float screenHeight)
+    {
+        return (position.y > screenHeight);
+    }
+
+    bool RightScreenRecCol(Vector2 position, float screenWidth)
+    {
+        return (position.x > screenWidth);
+    }
+
+    bool LeftScreenRecCol(Vector2 position, Vector2 size)
+    {
+        return (position.x + size.x < 0);
     }
 }

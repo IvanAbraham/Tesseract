@@ -7,7 +7,9 @@ namespace tesseract::entities
 	{
 		Vector2 size;
 		Vector2 pos;
+		Vector2 topPos;
 		float speed;
+		float gap;
 	};
 
 	void InitObstacle(Obstacle& obstacle);

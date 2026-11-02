@@ -1,41 +1,52 @@
- # Tesseract
+# Tesseract
 
-  Tesseract es un juego estilo *Flappy Bird* con estética techno, desarrollado en C++ con
-  [raylib](https://www.raylib.com/).
+Tesseract is a *Flappy Bird*-style game with a techno aesthetic, developed in C++ with
+[raylib](https://www.raylib.com/).
 
-  Controlás una nave que debe esquivar los obstáculos que provienen desde la derecha. Si chocás, perdés.
+You control a ship that must fly through the gap in the obstacles coming from the right.
+If you crash or fall below the screen, you lose.
 
-  > Trabajo práctico de **Práctica Profesional I: Desarrollo de Videojuegos I** — Image Campus, 2026.
-  > El juego se desarrolla de forma iterativa: cada versión agrega nuevas funcionalidades.
+> Assignment for **Práctica Profesional I: Desarrollo de Videojuegos I**, Image Campus, 2026.
+> The game is developed iteratively: each version adds new features.
 
-  ## Versión actual: 0.1
+## Current version: 0.2
 
-  - Nave controlable en el lado izquierdo de la pantalla.
-  - Un obstáculo que avanza hacia la izquierda y reaparece por la derecha a otra altura.
-  - Condición de derrota al colisionar, con pantalla de Game Over y reinicio.
+- Gravity and jump: the ship falls constantly and jumps at the press of a key.
+- The ceiling stops the ship; falling below the screen is a loss.
+- Two-part obstacle (top and bottom) with a gap of variable height and size.
+- Main menu with options to play, view the credits and exit.
+- Credits screen.
+- After a Game Over you can retry, and you can return to the menu at any time during a run.
 
-  ## Controles
+## Controls
 
-  | Tecla | Acción |
-  |---|---|
-  | ↑ / ↓ | Mover la nave |
-  | Enter | Reiniciar tras perder |
-  | Esc | Salir |
+| Key | Action |
+|---|---|
+| Space | Jump |
+| Enter | Retry after losing |
+| M | Return to menu |
+| Left click | Select a menu option |
+| Esc | Close the game |
 
-  ## Cómo compilar
+## Version history
 
-  1. Clonar el repositorio.
-  2. Abrir `Tesseract.slnx` con Visual Studio.
-  3. Seleccionar la configuración **Debug** o **Release** en **x64**.
-  4. Compilar y ejecutar (F5).
+- **0.2**: gravity and jump, two-part obstacle, main menu and credits.
+- **0.1**: controllable ship, one obstacle and a lose condition with Game Over.
 
-  raylib 6.2 ya viene incluida en `lib/`, no hace falta instalar nada extra.
+## How to build
 
-  ## Descargas
+1. Clone the repository.
+2. Open `Tesseract.slnx` with Visual Studio.
+3. Select the **Debug** or **Release** configuration on **x64**.
+4. Build and run (F5).
 
-  Los ejecutables de cada versión están disponibles en la sección
-  [Releases](https://github.com/IvanAbraham/Tesseract/releases).
+raylib 6.2 is already included in `lib/`, so there is nothing else to install.
 
-  ## Autor
+## Downloads
 
-  **Ivan Abraham** — [GitHub](https://github.com/IvanAbraham)
+The executables for each version are available in the
+[Releases](https://github.com/IvanAbraham/Tesseract/releases) section.
+
+## Author
+
+**Ivan Abraham** ([GitHub](https://github.com/IvanAbraham))

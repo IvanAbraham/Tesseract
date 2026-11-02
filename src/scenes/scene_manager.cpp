@@ -1,5 +1,6 @@
 #include "scene_manager.h"
 #include "gameplay.h"	
+#include "main_menu.h"
 
 namespace tesseract::scenes
 {
@@ -11,6 +12,7 @@ namespace tesseract::scenes
 		switch (activeScene)
 		{
 		case Menu:
+			InitMainMenu();
 			break;
 
 		case Game:
@@ -33,6 +35,7 @@ namespace tesseract::scenes
 		switch (activeScene)
 		{
 		case Menu:
+			UpdateMainMenu();
 			break;
 
 		case Game:
@@ -55,6 +58,7 @@ namespace tesseract::scenes
 		switch (activeScene)
 		{
 		case Menu:
+			DrawMainMenu();
 			break;
 
 		case Game:
@@ -75,5 +79,11 @@ namespace tesseract::scenes
 	void ChangeScene(Scenes newScene)
 	{
 		activeScene = newScene;
+		InitScene();
+	}
+
+	bool ShouldExit()
+	{
+		return activeScene == Exit;
 	}
 }

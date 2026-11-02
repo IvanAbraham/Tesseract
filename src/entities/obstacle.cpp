@@ -28,8 +28,8 @@ namespace tesseract::entities
 	
 	void DrawObstacle(Obstacle& obstacle)
 	{
-		DrawRectangleV(obstacle.pos, obstacle.size, BLACK);
-		DrawRectangleV(obstacle.topPos, obstacle.size, BLACK);
+		DrawRectangleV(obstacle.pos, obstacle.size, WHITE);
+		DrawRectangleV(obstacle.topPos, obstacle.size, WHITE);
 	}
 
 	void ResetPos(Obstacle& obstacle)

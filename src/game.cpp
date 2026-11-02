@@ -4,10 +4,6 @@
 
 namespace tesseract
 {
-	static const char* verText = "v0.1";
-	static const int fontSize = 20;
-	static const int padding = 10;
-
 	static void InitGame();
 	static void UpdateGame();
 	static void DrawGame();
@@ -16,7 +12,7 @@ namespace tesseract
 	{		
 		InitGame();
 
-		while (!WindowShouldClose())
+		while (!WindowShouldClose() && !scenes::ShouldExit())
 		{
 			UpdateGame();
 
@@ -32,9 +28,7 @@ namespace tesseract
 		InitWindow(static_cast<int>(screenSize.x), static_cast<int>(screenSize.y), "TESSERACT");
 		SetTargetFPS(60);
 
-		scenes::ChangeScene(scenes::Game);
-
-		scenes::InitScene();
+		scenes::ChangeScene(scenes::Menu);
 	}
 
 	void UpdateGame()
@@ -46,13 +40,9 @@ namespace tesseract
 	{
 		BeginDrawing();
 		
-		ClearBackground(WHITE);
-		
+		ClearBackground(BLACK);
+
 		scenes::DrawScene();
-
-		static const int verWidth = MeasureText(verText, fontSize);
-
-		DrawText(verText, GetScreenWidth() - verWidth - padding, padding, fontSize, RED);
 
 		EndDrawing();
 	}

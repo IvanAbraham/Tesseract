@@ -49,6 +49,9 @@
     <ClCompile Include="src\entities\obstacle.cpp">
       <Filter>Archivos de origen\entities</Filter>
     </ClCompile>
+    <ClCompile Include="src\scenes\scene_manager.cpp">
+      <Filter>Archivos de origen\scenes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game.h">
@@ -65,6 +68,9 @@
     </ClInclude>
     <ClInclude Include="src\entities\obstacle.h">
       <Filter>Archivos de encabezado\entities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\scene_manager.h">
+      <Filter>Archivos de encabezado\scenes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

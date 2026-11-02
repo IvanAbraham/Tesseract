@@ -1,6 +1,6 @@
 #include "game.h"
 #include <raylib.h>
-#include "scenes/gameplay.h"
+#include "scenes/scene_manager.h"
 
 namespace tesseract
 {
@@ -32,12 +32,14 @@ namespace tesseract
 		InitWindow(static_cast<int>(screenSize.x), static_cast<int>(screenSize.y), "TESSERACT");
 		SetTargetFPS(60);
 
-		scenes::InitGameplay();
+		scenes::ChangeScene(scenes::Game);
+
+		scenes::InitScene();
 	}
 
 	void UpdateGame()
 	{
-		scenes::UpdateGameplay();
+		scenes::UpdateScene();
 	}
 
 	void DrawGame()
@@ -46,7 +48,7 @@ namespace tesseract
 		
 		ClearBackground(WHITE);
 		
-		scenes::DrawGameplay();
+		scenes::DrawScene();
 
 		static const int verWidth = MeasureText(verText, fontSize);
 

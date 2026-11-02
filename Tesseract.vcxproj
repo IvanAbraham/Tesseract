@@ -25,6 +25,7 @@
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\scenes\gameplay.cpp" />
+    <ClCompile Include="src\scenes\scene_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\engine\physics.h" />
@@ -32,6 +33,7 @@
     <ClInclude Include="src\entities\ship.h" />
     <ClInclude Include="src\game.h" />
     <ClInclude Include="src\scenes\gameplay.h" />
+    <ClInclude Include="src\scenes\scene_manager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

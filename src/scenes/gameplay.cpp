@@ -29,6 +29,10 @@ namespace tesseract::scenes
 
 			if (engine::CollisionRecRec(P1.pos, P1.size, Obs.pos, Obs.size) || engine::BottomScreenRecCol(P1.pos, static_cast<float>(GetScreenHeight())))
 			{
+				isGameOver = true;	
+			}
+			if (engine::CollisionRecRec(P1.pos, P1.size, Obs.topPos, Obs.size) || engine::BottomScreenRecCol(P1.pos, static_cast<float>(GetScreenHeight())))
+			{
 				isGameOver = true;
 			}
 		}

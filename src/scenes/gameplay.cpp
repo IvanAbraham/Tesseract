@@ -2,6 +2,7 @@
 #include "entities/ship.h"
 #include "entities/obstacle.h"
 #include "engine/physics.h"
+#include "scene_manager.h"
 
 namespace tesseract::scenes
 {
@@ -40,6 +41,11 @@ namespace tesseract::scenes
 		{
 			if (IsKeyPressed(KEY_ENTER))
 				InitGameplay();
+		}
+
+		if (IsKeyDown(KEY_M))
+		{
+			ChangeScene(Menu);
 		}
 	}
 

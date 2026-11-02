@@ -25,6 +25,7 @@
     <ClCompile Include="src\entities\ship.cpp" />
     <ClCompile Include="src\game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\scenes\credits.cpp" />
     <ClCompile Include="src\scenes\gameplay.cpp" />
     <ClCompile Include="src\scenes\main_menu.cpp" />
     <ClCompile Include="src\scenes\scene_manager.cpp" />
@@ -35,6 +36,7 @@
     <ClInclude Include="src\entities\obstacle.h" />
     <ClInclude Include="src\entities\ship.h" />
     <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\scenes\credits.h" />
     <ClInclude Include="src\scenes\gameplay.h" />
     <ClInclude Include="src\scenes\main_menu.h" />
     <ClInclude Include="src\scenes\scene_manager.h" />

@@ -1,6 +1,7 @@
 #include "scene_manager.h"
 #include "gameplay.h"	
 #include "main_menu.h"
+#include "credits.h"
 
 namespace tesseract::scenes
 {
@@ -26,6 +27,7 @@ namespace tesseract::scenes
 			break;
 
 		case Credits:
+			InitCredits();
 			break;
 		}
 	}
@@ -49,6 +51,7 @@ namespace tesseract::scenes
 			break;
 
 		case Credits:
+			UpdateCredits();
 			break;
 		}
 	}
@@ -72,6 +75,7 @@ namespace tesseract::scenes
 			break;
 
 		case Credits:
+			DrawCredits();
 			break;
 		}
 	}

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\engine\button.cpp" />
     <ClCompile Include="src\engine\physics.cpp" />
     <ClCompile Include="src\entities\obstacle.cpp" />
     <ClCompile Include="src\entities\ship.cpp" />
@@ -28,6 +29,7 @@
     <ClCompile Include="src\scenes\scene_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\engine\button.h" />
     <ClInclude Include="src\engine\physics.h" />
     <ClInclude Include="src\entities\obstacle.h" />
     <ClInclude Include="src\entities\ship.h" />

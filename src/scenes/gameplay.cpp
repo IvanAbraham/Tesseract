@@ -11,7 +11,7 @@ namespace tesseract::scenes
 	static bool isGameOver;
 
 	static const int fontSize = 30;
-	static const char* loseMessage = "GAME OVER - Press enter to retry.";
+	static const char* loseMessage = "GAME OVER - Press enter to retry.\nPress M to go back to the menu.";
 
 	void InitGameplay()
 	{

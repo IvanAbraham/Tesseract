@@ -1,6 +1,7 @@
 #include "gameplay.h"
 #include "entities/ship.h"
 #include "entities/obstacle.h"
+#include "entities/background.h"
 #include "engine/physics.h"
 #include "scene_manager.h"
 
@@ -19,6 +20,7 @@ namespace tesseract::scenes
 
 		entities::InitShip(P1);
 		entities::InitObstacle(Obs);
+		entities::InitBackground();
 	}
 
 	void UpdateGameplay()
@@ -27,6 +29,7 @@ namespace tesseract::scenes
 		{
 			entities::UpdateShip(P1);
 			entities::UpdateObstacle(Obs);
+			entities::UpdateBackground();
 
 			if (engine::CollisionRecRec(P1.pos, P1.size, Obs.pos, Obs.size) || engine::BottomScreenRecCol(P1.pos, static_cast<float>(GetScreenHeight())))
 			{
@@ -51,6 +54,7 @@ namespace tesseract::scenes
 
 	void DrawGameplay()
 	{
+		entities::DrawBackground();
 		entities::DrawShip(P1);
 		entities::DrawObstacle(Obs);
 

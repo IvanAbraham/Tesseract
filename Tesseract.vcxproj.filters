@@ -61,6 +61,9 @@
     <ClCompile Include="src\scenes\credits.cpp">
       <Filter>Archivos de origen\scenes</Filter>
     </ClCompile>
+    <ClCompile Include="src\entities\background.cpp">
+      <Filter>Archivos de origen\entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\game.h">
@@ -89,6 +92,9 @@
     </ClInclude>
     <ClInclude Include="src\scenes\credits.h">
       <Filter>Archivos de encabezado\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entities\background.h">
+      <Filter>Archivos de encabezado\entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
